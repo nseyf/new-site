@@ -70,6 +70,9 @@ section {
 }
 .work {
   background: red;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+
 }
 
 .work-container {
@@ -77,17 +80,18 @@ section {
 }
 
 .work-item {
-  grid-column: 1 / span 1;
+  grid-column: 1 / -1;
   outline: 1px solid white;
 
 }
 
 .contact {
   color: white;
+  height: 400px;
 }
 
 
- @media (max-width: 1000px) {
+ @media (max-width: 1200px) {
    .title {
      font-size: 50px;
    }
@@ -117,3 +121,5 @@ section {
      font-size: 16px;
    }
  }
+
+ 
